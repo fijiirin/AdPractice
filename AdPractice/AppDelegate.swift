@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NendAd
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    //インターステシャル広告のロード
+    NADInterstitial.sharedInstance().loadAd(withSpotID: 0000000, apiKey: "apikey")
+    
+    
+    
     // Override point for customization after application launch.
     return true
   }

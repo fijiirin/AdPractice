@@ -3,28 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4DE5E87419EB8A78F70AB46B /* Pods_AdPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78505A4DDADC96FEBB6701D /* Pods_AdPractice.framework */; };
 		6F6CB75C26DE11E200D8DCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB75B26DE11E200D8DCD7 /* AppDelegate.swift */; };
 		6F6CB75E26DE11E200D8DCD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB75D26DE11E200D8DCD7 /* SceneDelegate.swift */; };
-		6F6CB76026DE11E200D8DCD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB75F26DE11E200D8DCD7 /* ViewController.swift */; };
 		6F6CB76326DE11E200D8DCD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CB76126DE11E200D8DCD7 /* Main.storyboard */; };
 		6F6CB76526DE11E700D8DCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CB76426DE11E700D8DCD7 /* Assets.xcassets */; };
 		6F6CB76826DE11E700D8DCD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F6CB76626DE11E700D8DCD7 /* LaunchScreen.storyboard */; };
+		6F6CB77126DE144400D8DCD7 /* AdViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB77026DE144400D8DCD7 /* AdViewController1.swift */; };
+		6F6CB77326DE145400D8DCD7 /* AdViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB77226DE145400D8DCD7 /* AdViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F6CB75826DE11E200D8DCD7 /* AdPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6CB75B26DE11E200D8DCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F6CB75D26DE11E200D8DCD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F6CB75F26DE11E200D8DCD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F6CB76226DE11E200D8DCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F6CB76426DE11E700D8DCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F6CB76726DE11E700D8DCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F6CB76926DE11E700D8DCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F6CB77026DE144400D8DCD7 /* AdViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController1.swift; sourceTree = "<group>"; };
+		6F6CB77226DE145400D8DCD7 /* AdViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController2.swift; sourceTree = "<group>"; };
 		75C1800014A40B9ADBF23A87 /* Pods-AdPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdPractice.debug.xcconfig"; path = "Target Support Files/Pods-AdPractice/Pods-AdPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		D37D3D7126438630178D3521 /* Pods-AdPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdPractice.release.xcconfig"; path = "Target Support Files/Pods-AdPractice/Pods-AdPractice.release.xcconfig"; sourceTree = "<group>"; };
 		D78505A4DDADC96FEBB6701D /* Pods_AdPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +67,7 @@
 			children = (
 				6F6CB75B26DE11E200D8DCD7 /* AppDelegate.swift */,
 				6F6CB75D26DE11E200D8DCD7 /* SceneDelegate.swift */,
-				6F6CB75F26DE11E200D8DCD7 /* ViewController.swift */,
+				6F6CB76F26DE141500D8DCD7 /* Controller */,
 				6F6CB76126DE11E200D8DCD7 /* Main.storyboard */,
 				6F6CB76426DE11E700D8DCD7 /* Assets.xcassets */,
 				6F6CB76626DE11E700D8DCD7 /* LaunchScreen.storyboard */,
@@ -74,13 +76,21 @@
 			path = AdPractice;
 			sourceTree = "<group>";
 		};
+		6F6CB76F26DE141500D8DCD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F6CB77026DE144400D8DCD7 /* AdViewController1.swift */,
+				6F6CB77226DE145400D8DCD7 /* AdViewController2.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9021E7073564ED178266527F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				75C1800014A40B9ADBF23A87 /* Pods-AdPractice.debug.xcconfig */,
 				D37D3D7126438630178D3521 /* Pods-AdPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,9 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F6CB76026DE11E200D8DCD7 /* ViewController.swift in Sources */,
 				6F6CB75C26DE11E200D8DCD7 /* AppDelegate.swift in Sources */,
+				6F6CB77326DE145400D8DCD7 /* AdViewController2.swift in Sources */,
 				6F6CB75E26DE11E200D8DCD7 /* SceneDelegate.swift in Sources */,
+				6F6CB77126DE144400D8DCD7 /* AdViewController1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
