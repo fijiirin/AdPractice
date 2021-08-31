@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DE5E87419EB8A78F70AB46B /* Pods_AdPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78505A4DDADC96FEBB6701D /* Pods_AdPractice.framework */; };
 		6F6CB75C26DE11E200D8DCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB75B26DE11E200D8DCD7 /* AppDelegate.swift */; };
 		6F6CB75E26DE11E200D8DCD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB75D26DE11E200D8DCD7 /* SceneDelegate.swift */; };
 		6F6CB76026DE11E200D8DCD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CB75F26DE11E200D8DCD7 /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		6F6CB76426DE11E700D8DCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F6CB76726DE11E700D8DCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F6CB76926DE11E700D8DCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C1800014A40B9ADBF23A87 /* Pods-AdPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdPractice.debug.xcconfig"; path = "Target Support Files/Pods-AdPractice/Pods-AdPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		D37D3D7126438630178D3521 /* Pods-AdPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdPractice.release.xcconfig"; path = "Target Support Files/Pods-AdPractice/Pods-AdPractice.release.xcconfig"; sourceTree = "<group>"; };
+		D78505A4DDADC96FEBB6701D /* Pods_AdPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE5E87419EB8A78F70AB46B /* Pods_AdPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6F6CB75A26DE11E200D8DCD7 /* AdPractice */,
 				6F6CB75926DE11E200D8DCD7 /* Products */,
+				9021E7073564ED178266527F /* Pods */,
+				A19A15536AF160F756E1D88C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = AdPractice;
 			sourceTree = "<group>";
 		};
+		9021E7073564ED178266527F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75C1800014A40B9ADBF23A87 /* Pods-AdPractice.debug.xcconfig */,
+				D37D3D7126438630178D3521 /* Pods-AdPractice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A19A15536AF160F756E1D88C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D78505A4DDADC96FEBB6701D /* Pods_AdPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F6CB76C26DE11E700D8DCD7 /* Build configuration list for PBXNativeTarget "AdPractice" */;
 			buildPhases = (
+				D5D1DB1E1AD0F384CA9B2ABE /* [CP] Check Pods Manifest.lock */,
 				6F6CB75426DE11E200D8DCD7 /* Sources */,
 				6F6CB75526DE11E200D8DCD7 /* Frameworks */,
 				6F6CB75626DE11E200D8DCD7 /* Resources */,
+				8BD837D4925B8EAD9AEA1C94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BD837D4925B8EAD9AEA1C94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdPractice/Pods-AdPractice-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdPractice/Pods-AdPractice-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdPractice/Pods-AdPractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D1DB1E1AD0F384CA9B2ABE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F6CB75426DE11E200D8DCD7 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		6F6CB76D26DE11E700D8DCD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C1800014A40B9ADBF23A87 /* Pods-AdPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +366,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fijiirin.AdPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6F6CB76E26DE11E700D8DCD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37D3D7126438630178D3521 /* Pods-AdPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +386,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fijiirin.AdPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
